@@ -64,7 +64,7 @@ function sendNotificationIfNeed() {
   let token = push_key.replace(/[\r\n]/g,"")
 
   const options ={
-    uri:  `http://www.pushplus.plus/send',
+    uri:  'http://www.pushplus.plus/send',
     form: { token, title, content },
     json: true,
     method: 'POST'
